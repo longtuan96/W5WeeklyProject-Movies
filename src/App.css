@@ -1,38 +1,145 @@
+.header {
+  /* background-color: transparent; */
+  height: 10%;
+}
+.headerScroll {
+  transition: 0.5s ease;
+  background-color: black !important;
+}
 .App {
-  text-align: center;
+  background-color: black;
+  height: max-content;
+}
+.carousel-img {
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.carousel-caption {
+  margin-bottom: 10vh;
+  width: 40%;
+  background-color: rgba(0, 0, 0, 40%);
+  border-radius: 20px;
+  padding: 20px;
+}
+.carousel-button {
+  margin-left: 4px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.sliderBox {
+  width: 216px;
+  height: auto;
+
+  border-radius: 10px;
+  padding-left: 5px;
+  position: relative;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.sliderBox-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+.slider-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  display: none;
+  transition: 0.5s ease;
+}
+.bg-trans {
+  background-color: transparent;
+}
+.slick-dots {
+  background: transparent;
+  bottom: 2% !important;
+}
+
+.title {
+  color: white;
+  background-color: transparent;
+}
+
+.movie-detail {
+  padding: 5% 5% 5% 5%;
+  height: 100vh;
+}
+.movie-poster {
+  width: 60%;
+  object-fit: fill;
+  max-height: auto;
+  margin-top: 2%;
+}
+.movie-info {
+  height: max-content;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.yellow-border {
+  border: yellow solid 1px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+hr {
+  background-color: white;
+}
+.tagBox {
+  border-radius: 5px;
+  background-color: grey;
+  color: white;
+  padding: 5px;
+  margin-left: 4px;
+  font-size: 100%;
+}
+.movie-title {
+  font-size: 300%;
+}
+.movie-stat {
+  margin-right: 5%;
+  font-size: 100%;
+}
+.movie-description {
+  font-size: 100%;
+}
+.movie-button {
+  margin-top: 2%;
+}
+.likeButton {
+  border-radius: 100px !important;
+  border-color: black !important;
+  margin-right: 2%;
+}
+.icon {
+  width: 50%;
+  height: auto;
+}
+
+.movies-page {
+  height: auto;
+  display: flex;
+  padding-top: 10%;
+  justify-content: center;
+}
+
+.movies-row {
+  width: 100%;
+}
+
+.movies-card {
+  width: 100%;
+  margin-top: 5%;
+}
+
+.pagination {
+  margin-top: 5%;
+}
+
+.favorite-page {
+  min-height: 100vh;
+
+  padding-top: 10%;
+  padding-bottom: 5%;
 }
