@@ -11,7 +11,7 @@
   height: max-content;
 }
 .carousel-img {
-  height: 100vh;
+  height: auto;
 }
 
 .carousel-caption {

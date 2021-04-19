@@ -12,7 +12,7 @@ import {
 } from "react-bootstrap";
 import { Link, useHistory } from "react-router-dom";
 import api from "../apiService";
-import TMDB from "../images/TMDB.svg";
+
 const Header = ({ getImgUrl }) => {
   const [show, setShow] = useState(false);
   const [status, setStatus] = useState("");
@@ -69,9 +69,7 @@ const Header = ({ getImgUrl }) => {
         }
         variant="dark"
       >
-        <Navbar.Brand href="#home">
-          <img src={TMDB} alt="The Movie DB" className="icon" />
-        </Navbar.Brand>
+        <Navbar.Brand href="#home">The Movie DB</Navbar.Brand>
         <Nav className="mr-auto">
           <Nav.Link as={Link} to={"/"}>
             Home
